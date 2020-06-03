@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+@font-face {
+  src: url(fonts/berlin.otf);
+  font-family: futura;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title-products-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  font-family: futura;
+}
+
+.title {
+  font-weight: 100;
+  font-size: 30pt;
+  margin-top: -15px;
+  color: black;
+}
+
+.sub-title {
+  letter-spacing: 1.5px;
+  font-size: 13pt;
+  color: rgb(232, 199, 65);
+}
+
+.index-products-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4px 0 4.5px 0;
+  width: 100%;
+  margin-bottom: 180px;
+  height: auto;
+  background-color: whitesmoke;
+  font-size: 0;
+}
+
+.img-1 {
+  width: 300px;
+  height: auto;
+  font-size: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+  margin: 3px 3px;
+}
+
+.bottom-bar-container {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bottom-bar-container svg {
+  width: 45px;
+  height: 45px;
+}
+
+#image-display-handler {
+  position: fixed;
+  width: 0;
+  height: 100%;
+  top: 0;
+  background: rgba(51, 51, 51, 0.7);
+  z-index: 10;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  transition: 0.5s;
+}
+
+.image-display {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  height: 560px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.img-2 {
+  width: 460px;
+  height: 420px;
+  margin-bottom: 25px;
+  z-index: 1;
+  cursor: unset;
+  border-radius: 2px;
+}
+
+.image-handler {
+  font-size: 0px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  font-family: futura;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding-bottom: 25px;
+}
+
+.image-handler > h1 {
+  font-size: 27pt;
+}
+
+.image-handler > h2 {
+  font-size: 23pt;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
