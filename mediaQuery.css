@@ -120,13 +120,12 @@
     width: 25px;
     height: auto;
   }
-    
-  .main-svg-logo {
-    width: 110px;
-    height: 95px;
-  }
 
   .another-svg {
     width: 38px;
+  }
+    
+  .logo-bottom{
+    padding-left: 17px;
   }
 }
