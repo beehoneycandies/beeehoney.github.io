@@ -1,4 +1,13 @@
-
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {.img-1 {
+    width: 150px;
+    height: 118.84px;
+    margin: 2px 2px;
+  }
+      
+}
 @media (min-width: 481px) and (max-width: 767px) {
   .just-for-color {
     width: 100%;
