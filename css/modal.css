@@ -59,6 +59,7 @@
   height: 100%;
   overflow-y: hidden;
   background-color: rgba(0, 0, 0, 0.5);
+  touch-action: none;
 }
 
 .close {
